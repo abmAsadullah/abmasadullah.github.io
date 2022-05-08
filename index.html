@@ -20,6 +20,9 @@
     <link href="css/style.css" rel="stylesheet">
 	<!-- Animations -->
     <link href="css/animate.css" rel="stylesheet">
+
+  <!-- extra imported  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Custom Favicon -->
 	<link href="img/icon.jpg" rel="shortcut icon" type="image/x-icon" /> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -104,12 +107,14 @@
           <div class="container">
 		    <!-- WELCOME TEXT -->
             <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
+              <div class="col-md-8 col-md-offset-2" data-aos="fade-left">
                 <h1 class="arrow" style="font-size: 40px;">A little <span>about</span> me</h1><!-- Headline -->
 				<!-- about / welcome text -->
-                <p class="wp2 delay-05s" style="font-size: 20px;">I am a Full Stack Software Developer with experience in building websites and web applications.
+                <p style="font-size: 20px;" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">I am a Full Stack Software Developer with experience in building websites and web applications.
                   I specialize in Python Django. I've also worked with other technologies including HTML, CSS, Bootstrap and Javascript.</p>
-                  <p class="wp2 delay-1s" style="font-size: 20px;">
+                  <p style="font-size: 20px;" data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom">
                   I completed BSc(Hons) in Computer Science & Engineering from <a href="https://manarat.ac.bd/" target="_blank">Manarat International University</a>. At the University I created many projects like Web applications using Python-Django & Flask, AI projects using Machine Learning, Software development using C++ programming language, etc.</p>
               </div>
             </div>
@@ -126,7 +131,7 @@
           <div class="container">
         <!-- Headline -->
             <div class="row wp1">
-              <div class="col-md-12">
+              <div class="col-md-12" data-aos="fade-up">
                 <h1 class="arrow" style="font-size: 40px;">I do amazing things for clients</h1>
               </div>
             </div>
@@ -134,7 +139,7 @@
               <div class="col-md-12">
                 <div class="services">
                 <!-- Service Box 1 -->
-                  <div class="col-md-4 wp2 item">
+                  <div class="col-md-4 item" data-aos="fade-right">
                     <div class="icon">
                       <i class="fa fa-camera"></i><!-- Icon -->
                     </div>
@@ -143,7 +148,7 @@
                     primis in faucibus.</p><!-- Description -->
                   </div>
           <!-- Service Box 2 -->
-                  <div class="col-md-4 wp2 item delay-05s">
+                  <div class="col-md-4 item delay-05s" data-aos="fade-down">
                     <div class="icon">
                       <i class="fa fa-desktop"></i><!-- Icon -->
                     </div>
@@ -152,7 +157,7 @@
                     primis in faucibus.</p><!-- Description -->
                   </div>
           <!-- Service Box 3 -->
-                  <div class="col-md-4 wp2 item delay-1s">
+                  <div class="col-md-4 item delay-1s" data-aos="fade-left">
                     <div class="icon">
                       <i class="fa fa-cubes"></i><!-- Icon -->
                     </div>
@@ -651,7 +656,10 @@
         }
 	
     </script>
-	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 	<!-- TEXT ROTATOR SETTINGS -->
     <script type="text/javascript">
     $(".rotate").textrotator({
